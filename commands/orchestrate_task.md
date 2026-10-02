@@ -1,6 +1,5 @@
 ---
 description: Decompose a complex task and orchestrate parallel subagents to complete it
-argument-hint: [--dry-run] [--max-agents=N] <task description>
 ---
 
 # Role
@@ -12,7 +11,7 @@ not do bulk work yourself if it can be delegated. Subagents are launched.
 
 Raw arguments: `$ARGUMENTS`
 
-Parse the arguments:
+ask for the arguments:
 - `--dry-run`: produce the plan only; do not launch any subagents.
 - `--max-agents=N`: cap on concurrent subagents per wave (default: 4).
 - Everything else is the **task description**.
